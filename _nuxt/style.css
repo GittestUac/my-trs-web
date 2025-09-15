@@ -1,0 +1,141 @@
+
+
+a, button {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.background-color{
+    align-content: flex-end;
+    align-items: flex-end;
+    background-color: #d8d8d8;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0px 0px 0px 0px;
+    width: 1920px;
+    max-width: 100%;
+}
+
+.top.background-image{
+    align-items: center;
+    background: rgba(0, 0, 0, 0.0);
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 750px;
+    justify-content: center;
+    width: 55%;
+    max-width: 55%;
+}
+
+.Trust {
+    flex: none;
+    height: 58.65px;
+    margin: 0px 0px 0px -120px;
+    width: 200px;
+    max-width: calc(100% - -120px);
+}
+
+.Responsibirity{
+    flex: none;
+    height: 88.04px;
+    margin: 40px 0px 0px -120px;
+    width: 550px;
+    max-width: calc(100% - -120px);
+}
+.Servise{
+    flex: none;
+    height: 68.08px;
+    margin: 20px 0px 0px -120px;
+    width: 300px;
+    max-width: calc(100% - -120px);
+}
+
+.About{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px 0px 0px 50px;
+    padding: 0px;
+    max-width: calc(100% - 50px);
+}
+
+.About-image{
+    flex: none;
+    height: auto;
+    width: 500px;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    pointer-events: all;
+    z-index: 0;
+    -webkit-overflow-scrolling: touch;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.About-heading{
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+}
+
+.About-Text{
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px 0px 0px 50px;
+    padding: 0px;
+    max-width: calc(100% - 50px);
+}
+
+.About-Maintext{
+    color: #191919;
+    font-size: 24px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.8;
+    margin: 50px 0px 0px 0px;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+.Philosophy{
+    align-items: flex-start;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    width: 1920px;
+    max-width: 100%;
+}
+
+.Philosophy main{
+    align-items: center;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0px;
+    width: 100%;
+    --gap-uuid: d90dc25c-3775-430d-848e-494ea3203218;
+    --gap-h-d90dc25c-3775-430d-848e-494ea3203218: 0px;
+    --gap-v-d90dc25c-3775-430d-848e-494ea3203218: 0px;
+    max-width: 100%;
+}
