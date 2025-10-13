@@ -1,38 +1,134 @@
-
-
-a, button {
-    background: transparent;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
+body {
+    font-family: 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'Hiragino Mincho', 'MS PMincho', serif;
+    margin: 0
 }
 
-.background-color{
-    align-content: flex-end;
-    align-items: flex-end;
-    background-color: #d8d8d8;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    justify-content: flex-start;
-    margin: 0px 0px 0px 0px;
-    width: 1920px;
-    max-width: 100%;
+/* logo menu */
+.trslogo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 0 80px;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
-.top.background-image{
-    align-items: center;
-    background: rgba(0, 0, 0, 0.0);
+.trslogo-box .logo-img {
+  width: 160px;
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+.trslogo-box:hover .logo-img {
+  transform: scale(1.1);
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 20px;
+  color: #191919;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+
+.menu a:hover {
+  transform: scale(1.15);
+}
+
+.menu-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.material-icons {
+  font-size: 32px;
+  color: #191919;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+/*  上部ページ */
+.background {
     display: flex;
-    flex: none;
     flex-direction: column;
-    flex-wrap: nowrap;
-    height: 750px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    background: #a2a0a1;
+}
+
+.background-color {
+    position: relative;
+    width: 100%;
+    height: 750px; 
+    display: flex;
     justify-content: center;
-    width: 55%;
-    max-width: 55%;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 左半分：グレー */
+.background-color::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #a2a0a1;
+    z-index: 1;
+}
+
+/* 右半分：背景画像 */
+.top.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: flex-start; 
+    padding-left: 80px;       
+    z-index: 2;
+}
+
+.Trust,
+.Responsibirity,
+.Servise {
+    transform: translateX(-80px); 
 }
 
 .Trust {
@@ -43,14 +139,15 @@ a, button {
     max-width: calc(100% - -120px);
 }
 
-.Responsibirity{
+.Responsibirity {
     flex: none;
     height: 88.04px;
     margin: 40px 0px 0px -120px;
     width: 550px;
     max-width: calc(100% - -120px);
 }
-.Servise{
+
+.Servise {
     flex: none;
     height: 68.08px;
     margin: 20px 0px 0px -120px;
@@ -58,18 +155,79 @@ a, button {
     max-width: calc(100% - -120px);
 }
 
-.About{
+/* readmore */
+.readmore {
+  width: 100%;
+  display: flex;
+  background: #a2a0a1; 
+  margin: 0 0 0 150px;
+}
+
+
+.readmore-box {
+  display: flex;
+  margin: 60px 0 ;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 400px;
+  padding: 15px 25px;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: #a2a0a1; 
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.readmore-box:hover {
+  transform: scale(1.05);
+  background:#191919 ; 
+}
+
+.readmore-text {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 400;
+  font-family: 'Hiragino Mincho ProN', serif;
+  color: #fff; 
+}
+
+.readmore-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  transition: background 0.25s ease;
+}
+
+.readmore-box:hover .readmore-arrow {
+  background: rgba(255, 255, 255, 0.12); 
+}
+
+.material-icons {
+  font-size: 22px;
+  color: #fff;
+}
+
+
+
+/* About */
+.About {
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    margin: 0px 0px 0px 50px;
+    margin: 150px 0px 150px 50px;
     padding: 0px;
     max-width: calc(100% - 50px);
 }
 
-.About-image{
+.About-image {
     flex: none;
     height: auto;
     width: 500px;
@@ -85,13 +243,13 @@ a, button {
     position: relative;
 }
 
-.About-heading{
+.About-heading {
     height: auto;
     width: 160px;
     max-width: 100%;
 }
 
-.About-Text{
+.About-Text {
     align-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
@@ -102,7 +260,7 @@ a, button {
     max-width: calc(100% - 50px);
 }
 
-.About-Maintext{
+.About-Maintext {
     color: #191919;
     font-size: 24px;
     font-weight: 400;
@@ -115,27 +273,240 @@ a, button {
     justify-content: flex-start;
 }
 
-.Philosophy{
-    align-items: flex-start;
-    flex: none;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    height: auto;
-    justify-content: flex-start;
-    width: 1920px;
-    max-width: 100%;
+
+/* 理念 */
+.philosophy {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
 }
 
-.Philosophy main{
+
+.philosophy-image {
+    flex: 0 0 33.3333%; 
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.philosophy-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    z-index: 1;
+}
+
+.text-en {
+    color: #FFFFFF;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 40px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.4;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+.text-jp {
+    color: #FFFFFF;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 40px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.4;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+.philosophy-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 概要 */
+.overview {
+    display: flex;
     align-items: center;
-    flex: none;
-    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    margin: 150px auto;
+    width: 85%;
+}
+
+.overview-box {
+    align-items: center;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
+    margin: 0px 30px 0px 0px;
     padding: 0px;
+    max-width: calc(100% - 30px);
+}
+
+.overview-text {
+    color: #191919;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left;
+    flex: 1;
+}
+
+.overview-image {
+    width: 400px;
+    height: auto;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0;
     width: 100%;
-    --gap-uuid: d90dc25c-3775-430d-848e-494ea3203218;
-    --gap-h-d90dc25c-3775-430d-848e-494ea3203218: 0px;
-    --gap-v-d90dc25c-3775-430d-848e-494ea3203218: 0px;
+    height: auto;
+}
+
+.contact-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     max-width: 100%;
+    background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/p6ao4EvnWR/s-1500x601_v-fms_webp_5f92e240-184f-4425-8fe0-06e4c6b21eb6.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.contact-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contact-boxcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-boxpadding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.contact-text-en {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.contact-text-jp {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.text-general,
+.text-corporation {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.text-general:hover,
+.text-corporation:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* footer */
+.footer {
+    background-color: #969595;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 160px;
+    height: auto;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.footer-link {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.15);
 }
