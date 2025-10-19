@@ -5,73 +5,74 @@ body {
 
 /* logo menu */
 .trslogo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 120px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: transparent;
-  padding: 0 80px;
-  box-sizing: border-box;
-  z-index: 1000;
-  transition: transform 0.3s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 0 80px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: transform 0.3s ease;
 }
 
 .trslogo-box .logo-img {
-  width: 160px;
-  height: auto;
-  transition: transform 0.3s ease; 
+    width: 160px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
 .trslogo-box:hover .logo-img {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .menu a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 120px;
-  font-family: 'Frank Ruhl Libre', serif;
-  font-size: 20px;
-  color: #191919;
-  text-decoration: none;
-  transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 20px;
+    color: #191919;
+    text-decoration: none;
+    transition: transform 0.3s ease;
 }
 
 
 .menu a:hover {
-  transform: scale(1.15);
+    transform: scale(1.15);
 }
 
 .menu-button {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 .material-icons {
-  font-size: 32px;
-  color: #191919;
+    font-size: 32px;
+    color: #191919;
 }
 
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-  }
-  .menu-button {
-    display: block;
-  }
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
 }
 
 /*  上部ページ */
@@ -88,7 +89,7 @@ body {
 .background-color {
     position: relative;
     width: 100%;
-    height: 750px; 
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,23 +113,23 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%; 
+    width: 50%;
     height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    justify-content: center;  
-    align-items: flex-start; 
-    padding-left: 80px;       
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
     z-index: 2;
 }
 
 .Trust,
 .Responsibirity,
 .Servise {
-    transform: translateX(-80px); 
+    transform: translateX(-80px);
 }
 
 .Trust {
@@ -157,60 +158,60 @@ body {
 
 /* readmore */
 .readmore {
-  width: 100%;
-  display: flex;
-  background: #a2a0a1; 
-  margin: 0 0 0 150px;
+    width: 100%;
+    display: flex;
+    background: #a2a0a1;
+    margin: 0 0 0 150px;
 }
 
 
 .readmore-box {
-  display: flex;
-  margin: 60px 0 ;
-  align-items: center;
-  justify-content: space-between;
-  height: 80px;
-  width: 400px;
-  padding: 15px 25px;
-  color: #fff;
-  text-decoration: none;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  background: #a2a0a1; 
-  transition: transform 0.25s ease, background 0.25s ease;
+    display: flex;
+    margin: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 400px;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: #a2a0a1;
+    transition: transform 0.25s ease, background 0.25s ease;
 }
 
 .readmore-box:hover {
-  transform: scale(1.05);
-  background:#191919 ; 
+    transform: scale(1.05);
+    background: #191919;
 }
 
 .readmore-text {
-  font-size: 20px;
-  margin: 0;
-  font-weight: 400;
-  font-family: 'Hiragino Mincho ProN', serif;
-  color: #fff; 
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Hiragino Mincho ProN', serif;
+    color: #fff;
 }
 
 .readmore-arrow {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  transition: background 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: background 0.25s ease;
 }
 
 .readmore-box:hover .readmore-arrow {
-  background: rgba(255, 255, 255, 0.12); 
+    background: rgba(255, 255, 255, 0.12);
 }
 
 .material-icons {
-  font-size: 22px;
-  color: #fff;
+    font-size: 22px;
+    color: #fff;
 }
 
 
@@ -281,12 +282,12 @@ body {
     height: 50vh;
     margin: 0;
     padding: 0;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 
 .philosophy-image {
-    flex: 0 0 33.3333%; 
+    flex: 0 0 33.3333%;
     height: 100%;
     background-size: cover;
     background-position: center;
@@ -509,4 +510,250 @@ body {
 .footer-link:hover {
     transition: transform 0.3s ease;
     transform: scale(1.15);
+}
+
+
+/*contactページ*/
+.contact-form {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 120px 0px 0px 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+.contact-topimg {
+    flex: none;
+    height: 400px;
+    width: 1920px;
+    max-width: 100%;
+}
+
+/* お問い合わせ */
+.contactpage-contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.contactpage-contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactpage-contact-text-en {
+    color: #333;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 50px 0 0;
+}
+
+.contactpage-contact-text-jp {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ボタン部分 */
+.contactpage-contact-box {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.contactpage-contact-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactpage-contact-boxpadding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contactpage-text-generalbox,
+.contactpage-text-corporationbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 120px;
+    margin: 0 20px;
+    border: 2px solid #000;
+    background: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contactpage-text-generalbox:hover,
+.contactpage-text-corporationbox:hover {
+    background: #000;
+}
+
+.contactpage-text-generalbox:hover .contactpage-text-general,
+.contactpage-text-corporationbox:hover .contactpage-text-general {
+    color: #fff;
+}
+
+.contactpage-text-general {
+    color: #333;
+    font-family: 'ヒラギノ明朝 W3 JIS2004';
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+/* フォーム部分 */
+.contactpage-contactform {
+    display: flex;
+    width: 100%;
+}
+
+.contactpage-contactform-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    padding-top: 150px;
+}
+
+.contactpage-contactform-write {
+    width: 85%;
+    max-width: 600px;
+    margin: 0px 0px 100px 0px;
+}
+
+.form-label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-titlename {
+    color: #333;
+    font-family: 'ヒラギノ明朝 W3 JIS2004';
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-titlemust {
+    color: #f23a3c;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.message-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #333;
+    font-family: 'Lato';
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.message-box-textarea {
+    background: #fff;
+    height: 160px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #333;
+    font-family: 'Lato';
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-check {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.form-checkbox-text {
+    color: #333;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.send {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  background: #191919;
+  height: 60px;
+  width: 100%;            
+  max-width: 377px;        
+  margin: 0 auto;          
+}
+
+.send-button {
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'ヒラギノ明朝 W5 JIS2004', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Java */
+.background {
+  opacity: 0;
+}
+
+.Trust,
+.Responsibirity,
+.Servise {
+  opacity: 0;
 }
