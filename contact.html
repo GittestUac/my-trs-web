@@ -55,23 +55,7 @@
 
 
     <div class="container">
-        <nav class="trslogo">
-            <a href="#" class="trslogo-box">
-                <img class="logo-img" alt="logo"
-                    src="https://storage.googleapis.com/studio-design-asset-files/projects/p6ao4EvnWR/s-232x81_webp_ce04c7e0-45d3-4112-89b5-57a67886d72a.webp">
-            </a>
-
-            <div class="menu">
-                <a href="#" class="topmenu">Top</a>
-                <a href="#" class="businessmenu">Business</a>
-                <a href="#" class="companymenu">Company</a>
-                <a href="contact.html" class="contactmenu">Contact</a>
-            </div>
-
-            <button type="button" class="menu-button">
-                <i class="material-icons">drag_handle</i>
-            </button>
-        </nav>
+        <div id="header"></div>
 
         <div class="contactpage-contact">
             <div class="contactpage-contact-header">
@@ -82,137 +66,209 @@
             <div class="contactpage-contact-box">
                 <div class="contactpage-contact-flex">
                     <div class="contactpage-contact-boxpadding">
-                        <a href="general" class="contactpage-text-generalbox">
+                        <a href="javascript:void(0)" class="contactpage-text-generalbox" id="generalBtn">
                             <p class="contactpage-text-general">一般の方はこちら</p>
                         </a>
-                        <a href="corporation" class="contactpage-text-corporationbox">
+                        <a href="javascript:void(0)" class="contactpage-text-corporationbox" id="corporationBtn">
                             <p class="contactpage-text-general">法人の方はこちら</p>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div class="contactpage-contactform">
+            <!-- ▼ 一般用フォーム -->
+            <div class="contactpage-contactform" id="generalForm">
                 <div class="contactpage-contactform-section">
                     <div class="contactpage-contactform-write">
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">お名前</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <input name="Name" placeholder="山田 太郎" required="" type="text" class="message-box">
+                            <input name="Name" placeholder="山田 太郎" type="text" class="message-box" required>
                         </div>
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">フリガナ</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <input name="Name2" placeholder="ヤマダ タロウ" required="" type="text" class="message-box">
+                            <input name="Name2" placeholder="ヤマダ タロウ" type="text" class="message-box" required>
                         </div>
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">年齢</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <select name="Age" placeholder="山田 太郎" required="" type="text" class="message-box">
+                            <select name="Age" class="message-box" required>
                                 <option value="">-</option>
-                                <option value="">18</option>
-                                <option value="">19</option>
-                                <option value="">20</option>
-                                <option value="">21</option>
-                                <option value="">22</option>
-                                <option value="">23</option>
-                                <option value="">24</option>
-                                <option value="">25</option>
-                                <option value="">26</option>
-                                <option value="">27</option>
-                                <option value="">28</option>
-                                <option value="">29</option>
-                                <option value="">30</option>
-                                <option value="">31</option>
-                                <option value="">32</option>
-                                <option value="">33</option>
-                                <option value="">34</option>
-                                <option value="">35</option>
-                                <option value="">36</option>
-                                <option value="">37</option>
-                                <option value="">38</option>
-                                <option value="">39</option>
-                                <option value="">40</option>
-                                <option value="">41</option>
-                                <option value="">42</option>
-                                <option value="">43</option>
-                                <option value="">44</option>
-                                <option value="">45</option>
-                                <option value="">46</option>
-                                <option value="">47</option>
-                                <option value="">48</option>
-                                <option value="">49</option>
-                                <option value="">50</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                                <option value="32">32</option>
+                                <option value="33">33</option>
+                                <option value="34">34</option>
+                                <option value="35">35</option>
+                                <option value="36">36</option>
+                                <option value="37">37</option>
+                                <option value="38">38</option>
+                                <option value="39">39</option>
+                                <option value="40">40</option>
+                                <option value="41">41</option>
+                                <option value="42">42</option>
+                                <option value="43">43</option>
+                                <option value="44">44</option>
+                                <option value="45">45</option>
+                                <option value="46">46</option>
+                                <option value="47">47</option>
+                                <option value="48">48</option>
+                                <option value="49">49</option>
+                                <option value="50">50</option>
                             </select>
                         </div>
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">メールアドレス</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <input name="Address" placeholder="Your Mail Address" required="" type="text"
-                                class="message-box">
+                            <input name="Address" placeholder="Your Mail Address" type="email" class="message-box"
+                                required>
                         </div>
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">メールアドレス(確認用)</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <input name="Address2" placeholder="Email Address" required="" type="text"
-                                class="message-box">
+                            <input name="Address2" placeholder="Email Address" type="email" class="message-box"
+                                required>
                         </div>
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">電話番号</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <input name="Phone" placeholder="000-0000-0000" required="" type="text" class="message-box">
+                            <input name="Phone" placeholder="000-0000-0000" type="text" class="message-box" required>
                         </div>
+
                         <div class="form-label">
                             <div class="form-title">
                                 <p class="form-titlename">ご要望等(メッセージ)</p>
-                                <P class="form-titlemust">*</P>
+                                <p class="form-titlemust">*</p>
                             </div>
-                            <textarea name="Message" placeholder="メッセージをご入力ください" required=""
-                                class="message-box-textarea"></textarea>
+                            <textarea name="Message" placeholder="メッセージをご入力ください" class="message-box-textarea"
+                                required></textarea>
                         </div>
+
                         <div class="form-check">
                             <label class="form-check-label">
                                 <input name="Confirm" type="checkbox" class="form-checkbox" required>
                                 <span class="form-checkbox-text">I agree to the Privacy Policy.</span>
                             </label>
                         </div>
+
                         <div class="send">
                             <button class="send-button">Send</button>
                         </div>
+
                     </div>
                 </div>
             </div>
+
+
+            <!-- ▼ 法人フォーム -->
+            <div class="contactpage-contactform hidden" id="corporationForm">
+                <div class="contactpage-contactform-section">
+                    <div class="contactpage-contactform-write">
+
+                        <div class="form-label">
+                            <div class="form-title">
+                                <p class="form-titlename">企業名</p>
+                                <p class="form-titlemust">*</p>
+                            </div>
+                            <input name="Company" placeholder="株式会社〇〇" type="text" class="message-box" required>
+                        </div>
+
+                        <div class="form-label">
+                            <div class="form-title">
+                                <p class="form-titlename">代表者名</p>
+                                <p class="form-titlemust">*</p>
+                            </div>
+                            <input name="CEO" placeholder="山田 太郎" type="text" class="message-box" required>
+                        </div>
+
+                        <div class="form-label">
+                            <div class="form-title">
+                                <p class="form-titlename">フリガナ</p>
+                                <p class="form-titlemust">*</p>
+                            </div>
+                            <input name="Furigana" placeholder="ヤマダ タロウ" type="text" class="message-box" required>
+                        </div>
+
+                        <div class="form-label">
+                            <div class="form-title">
+                                <p class="form-titlename">メールアドレス</p>
+                                <p class="form-titlemust">*</p>
+                            </div>
+                            <input name="Mail" placeholder="Your Mail Address" type="email" class="message-box"
+                                required>
+                        </div>
+
+                        <div class="form-label">
+                            <div class="form-title">
+                                <p class="form-titlename">メールアドレス(確認用)</p>
+                                <p class="form-titlemust">*</p>
+                            </div>
+                            <input name="Mail2" placeholder="Email Address" type="email" class="message-box" required>
+                        </div>
+
+                        <div class="form-label">
+                            <div class="form-title">
+                                <p class="form-titlename">ご要望など(メッセージ)</p>
+                                <p class="form-titlemust">*</p>
+                            </div>
+                            <textarea name="Request" placeholder="メッセージをご入力ください" class="message-box-textarea"
+                                required></textarea>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input name="Confirm" type="checkbox" class="form-checkbox" required>
+                                <span class="form-checkbox-text">I agree to the Privacy Policy.</span>
+                            </label>
+                        </div>
+
+                        <div class="send">
+                            <button class="send-button">Send</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
     </div>
 
-    <footer class="footer">
-        <div class="footer-container">
-            <img class="footer-logo" alt="TRSロゴ"
-                src="https://storage.googleapis.com/studio-design-asset-files/projects/p6ao4EvnWR/s-297x103_webp_659e2ae7-b142-4a17-8c9d-1af8c203927b.webp">
+    <div id="footer"></div>
 
-            <nav class="footer-menu">
-                <a href="#" class="footer-link">Business</a>
-                <a href="#" class="footer-link">Company</a>
-                <a href="#" class="footer-link">Contact</a>
-                <a href="#" class="footer-link">Privacy Policy</a>
-            </nav>
-        </div>
-    </footer>
-    <script src="css/json.js" ></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
