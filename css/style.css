@@ -1,0 +1,934 @@
+body {
+    font-family: 'ヒラギノ明朝 ProN', 'Hiragino Mincho ProN', 'Hiragino Mincho Pro', 'Hiragino Mincho', 'MS PMincho', serif;
+    margin: 0
+}
+
+/* logo menu */
+.trslogo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    padding: 0 80px;
+    box-sizing: border-box;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.trslogo-box .logo-img {
+    width: 160px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.trslogo-box:hover .logo-img {
+    transform: scale(1.1);
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 20px;
+    color: #191919;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+
+.menu a:hover {
+    transform: scale(1.15);
+}
+
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-size: 32px;
+    color: #191919;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+/*  上部ページ */
+.background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    background: #a2a0a1;
+}
+
+.background-color {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 左半分：グレー */
+.background-color::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #a2a0a1;
+    z-index: 1;
+}
+
+/* 右半分：背景画像 */
+.top.background-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 80px;
+    z-index: 2;
+}
+
+.trust,
+.responsibirity,
+.servise {
+    transform: translateX(-80px);
+}
+
+.trust {
+    flex: none;
+    height: 58.65px;
+    margin: 0px 0px 0px -120px;
+    width: 200px;
+    max-width: calc(100% - -120px);
+}
+
+.responsibirity {
+    flex: none;
+    height: 88.04px;
+    margin: 40px 0px 0px -120px;
+    width: 550px;
+    max-width: calc(100% - -120px);
+}
+
+.servise {
+    flex: none;
+    height: 68.08px;
+    margin: 20px 0px 0px -120px;
+    width: 300px;
+    max-width: calc(100% - -120px);
+}
+
+/* readmore */
+.readmore {
+    width: 100%;
+    display: flex;
+    background: #a2a0a1;
+    margin: 0 0 0 150px;
+}
+
+
+.readmore-box {
+    display: flex;
+    margin: 60px 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    width: 400px;
+    padding: 15px 25px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: #a2a0a1;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.readmore-box:hover {
+    transform: scale(1.05);
+    background: #191919;
+}
+
+.readmore-text {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Hiragino Mincho ProN', serif;
+    color: #fff;
+}
+
+.readmore-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    transition: background 0.25s ease;
+}
+
+.readmore-box:hover .readmore-arrow {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.material-icons {
+    font-size: 22px;
+    color: #fff;
+}
+
+
+
+/* about */
+.about {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 150px 0px 150px 50px;
+    padding: 0px;
+    max-width: calc(100% - 50px);
+}
+
+.about-image {
+    flex: none;
+    height: auto;
+    width: 500px;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    pointer-events: all;
+    z-index: 0;
+    -webkit-overflow-scrolling: touch;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.about-heading {
+    height: auto;
+    width: 160px;
+    max-width: 100%;
+}
+
+.about-text {
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px 0px 0px 50px;
+    padding: 0px;
+    max-width: calc(100% - 50px);
+}
+
+.about-maintext {
+    color: #191919;
+    font-size: 24px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.8;
+    margin: 50px 0px 0px 0px;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+
+/* 理念 */
+.philosophy {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.philosophy-image {
+    flex: 0 0 33.3333%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.philosophy-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    z-index: 1;
+}
+
+.text-en {
+    color: #FFFFFF;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 40px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.4;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+.text-jp {
+    color: #FFFFFF;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 40px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.4;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+/* 内部の text-en / text-jp も中央揃え */
+.philosophy-text .text-en,
+.philosophy-text .text-jp {
+    text-align: center;
+    /* ←左揃えから中央揃えに変更 */
+}
+
+.philosophy-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* 概要 */
+.overview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 150px auto;
+    width: 85%;
+}
+
+.overview-box {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px 30px 0px 0px;
+    padding: 0px;
+    max-width: calc(100% - 30px);
+}
+
+.overview-text {
+    color: #191919;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left;
+    flex: 1;
+}
+
+.overview-image {
+    width: 400px;
+    height: auto;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0 0;
+    width: 100%;
+    height: auto;
+}
+
+.contact-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    background-image: url("https://storage.googleapis.com/studio-design-asset-files/projects/p6ao4EvnWR/s-1500x601_v-fms_webp_5f92e240-184f-4425-8fe0-06e4c6b21eb6.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.contact-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contact-boxcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-boxpadding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.contact-text-en {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.contact-text-jp {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.text-general,
+.text-corporation {
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 400;
+    padding: 20px 50px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.text-general:hover,
+.text-corporation:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* footer */
+.footer {
+    background-color: #969595;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 160px;
+    height: auto;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.footer-link {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.15);
+}
+
+
+/*contactページ*/
+.contact-form {
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 120px 0px 0px 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+.contact-topimg {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* お問い合わせ */
+.contactpage-contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.contactpage-contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactpage-contact-text-en {
+    color: #333;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 50px 0 0;
+}
+
+.contactpage-contact-text-jp {
+    color: #333;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ボタン部分 */
+.contactpage-contact-box {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.contactpage-contact-flex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contactpage-contact-boxpadding {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contactpage-text-generalbox,
+.contactpage-text-corporationbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 120px;
+    margin: 0 20px;
+    border: 2px solid #000;
+    background: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contactpage-text-generalbox:hover,
+.contactpage-text-corporationbox:hover {
+    background: #000;
+}
+
+.contactpage-text-generalbox:hover .contactpage-text-general,
+.contactpage-text-corporationbox:hover .contactpage-text-general {
+    color: #fff;
+}
+
+.contactpage-text-general {
+    color: #333;
+    font-family: 'ヒラギノ明朝 W3 JIS2004';
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+/* フォーム部分 */
+.contactpage-contactform {
+    display: flex;
+    width: 100%;
+}
+
+.contactpage-contactform-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    padding-top: 150px;
+}
+
+.contactpage-contactform-write {
+    width: 85%;
+    max-width: 600px;
+    margin: 0px 0px 100px 0px;
+}
+
+.form-label {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-titlename {
+    color: #333;
+    font-family: 'ヒラギノ明朝 W3 JIS2004';
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.form-titlemust {
+    color: #f23a3c;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.message-box {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #333;
+    font-family: 'Lato';
+    font-size: 15px;
+    height: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.message-box-textarea {
+    background: #fff;
+    height: 160px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    color: #333;
+    font-family: 'Lato';
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-checkbox {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.form-checkbox-text {
+    color: #333;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #191919;
+    height: 60px;
+    width: 100%;
+    max-width: 377px;
+    margin: 0 auto;
+}
+
+.send-button {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'ヒラギノ明朝 W5 JIS2004', serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* 非表示クラス */
+.hidden {
+    display: none;
+}
+
+
+/* Java */
+.background {
+    opacity: 0;
+}
+
+.trust,
+.responsibirity,
+.servise {
+    opacity: 0;
+}
+
+
+/* =========================================
+   ▼携帯サイズの調整（768px以下）
+   ========================================= */
+@media (max-width: 768px) {
+
+    .trslogo {
+        height: 80px;
+        padding: 0 20px;
+    }
+
+    .trslogo-box .logo-img {
+        width: 120px;
+    }
+
+    /* TOP画像 */
+    .background-color {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .background-color::before {
+        width: 100%;
+    }
+
+    .top.background-image {
+        position: relative;
+        width: 100% !important;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        background-size: contain;
+        background-position: left top;
+        height: 70vh;
+        max-width: 100%;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+
+    /* 画像グループ */
+    .top.background-image img.responsibirity,
+    .top.background-image img.trust,
+    .top.background-image img.servise {
+        height: 40px;
+        width: auto;
+        max-width: 100%;
+    }
+
+    .trust,
+    .responsibirity,
+    .servise {
+        margin: 10px 0;
+        align-self: flex-start;
+        transform: translateX(0);
+    }
+
+
+
+    /* readmore */
+    .readmore {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .readmore-box {
+        margin: 0;
+    }
+
+    /* about */
+    .about {
+        flex-direction: column;
+        margin: 80px 0;
+    }
+
+    .about-text {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 90%;
+    }
+
+    /* philosophy */
+    .philosophy {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .philosophy-image {
+        width: 100%;
+        height: 300px;
+        flex: none;
+    }
+
+    /* overview */
+    .overview {
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+    }
+
+    .overview-image {
+        width: 90%;
+    }
+
+    /* contact */
+    .contactpage-contact-header .contactpage-contact-text-en {
+        font-size: 40px;
+    }
+
+    .contactpage-contact-header .contactpage-contact-text-jp {
+        font-size: 18px;
+    }
+
+    .contactpage-contact-boxpadding {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contactpage-text-generalbox,
+    .contactpage-text-corporationbox {
+        height: 80px;
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .contactpage-contactform-write {
+        width: 90%;
+    }
+
+    .form-titlename,
+    .form-titlemust {
+        font-size: 14px;
+    }
+
+    .message-box {
+        height: 45px;
+    }
+
+    .message-box-textarea {
+        height: 140px;
+    }
+
+    /* send */
+    .send {
+        width: 90%;
+    }
+
+    /* footer */
+    .footer-logo {
+        width: 120px;
+    }
+
+    .footer-link {
+        font-size: 18px;
+    }
+}
